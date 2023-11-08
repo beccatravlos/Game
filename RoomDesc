@@ -1,0 +1,42 @@
+JAIL_CELL_A
+A damp, dark cell with long metal bars leading to the outside. The only way out is to the north. Looks like the wizard didn't add any amenities. Darn.
+#
+JAIL_CELL_B
+A damp cell that now has light from the hallway flowing through it. Said hallway is to the north.
+#
+DUNGEON_HALL
+A long hallway littered with wall lamps leading to a set of stairs going up. Your old cell is to the south.
+#
+BASEMENT_A
+A dusty room with a variety of junk strewn about. On a crate, there is an Old Tome. There is a set of stairs going up, a trap door going down, and a locked door to the west.
+#
+BASEMENT_B
+A dusty room with a variety of junk strewn about. There is a set of stairs going up, a trap door going down, and a locked door to the west.
+#
+BASEMENT_C
+A dusty room with a variety of junk strewn about. There is a set of stairs going up, a trap door going down, and a now opened door to the west.
+#
+WINE_CELLAR_A
+You are in a room stock full of various beverages. It'll be tempting not to drink them all. An empty bottle lies on the floor. You can exit back out to the east.
+#
+WINE_CELLAR_B
+You are in a room stock full of various beverages. It'll be tempting not to drink them all. An empty bottle lies on the floor.
+#
+CAULDRON_ROOM_A
+You enter a room with a large cauldron in the center. It contains a useless liquid. Maybe you can do something to it? There are stairs going down and another room to the north.
+#
+CAULDRON_ROOM_B
+You enter a room with a large cauldron in the center. Your potion bubbles profusely inside of the pot.There are stairs going down and another room to the north.
+#
+ENTRANCE_A
+You've gotten to the entrance at last!!!!!! The door is locked though. Sorry. A candleabra sits on a counter. There is another room to the south.
+#
+ENTRANCE_B
+You've gotten to the entrance at last!!!!!! The door is locked though. Sorry. There is another room to the south.
+#
+ENTRANCE_C
+You've gotten to the entrance at last!!!!!! And the door is actually unlocked this time!!! The exit is to the north. A candleabra sits on a counter. There is another room to the south.
+#
+ENTRANCE_D
+You've gotten to the entrance at last!!!!!! And the door is actually unlocked this time!!! The exit is to the north. There is another room to the south.
+#
