@@ -2,7 +2,7 @@ import java.io.Serializable;
 import java.util.HashMap;
 
 public class Room implements Serializable{
-	private String des;
+	//private String des;
 	private Room east;
 	private Room west;
 	private Room north;
@@ -11,16 +11,27 @@ public class Room implements Serializable{
 	private Room down;
 	private boolean locked;
 	private String name;
+	private String id;
 	
 	private HashMap<String, Item> roomItems;
+//	private HashMap<String, NPC> roomNPCs;
 	
 	public Room(String n,String r) {
-		des=r;
+		//des=r;
 		name = n;
+		id = r;
 		locked=false;
 		roomItems = new HashMap<String, Item>();
 		World.rooms.put(name, this);
 	}
+	
+//	public void addNPC(String npc) {
+//		roomNPCs.put(npc.getName(), npc);
+//	}
+	
+//	public NPC getNPC(String name) {
+//		return roomNPCs.get(name);
+//	}
 	
 	public String getName() {
 		return name;
@@ -36,7 +47,9 @@ public class Room implements Serializable{
 		this.locked = locked;
 	}
 
-
+	public void setId(String id) {
+		this.id = id;
+	}
 
 	public Item removeItem(String name) {
 		return roomItems.remove(name);
@@ -51,9 +64,13 @@ public class Room implements Serializable{
 	}
 	
 	public String getDes() {
-		return des;
+		return Game.rMap.get(id);
 	}
 	
+	public String getId() {
+		return id;
+	}
+
 	public Room getExit(String d) {
 		if (d.equals("e")) {
 			return east;
@@ -89,6 +106,6 @@ public class Room implements Serializable{
 	}
 	
 	public String toString() {
-		return des;
+		return Game.rMap.get(id);
 	}
 }

@@ -1,42 +1,63 @@
 JAIL_CELL_A
-A damp, dark cell with long metal bars leading to the outside. The only way out is to the north. Looks like the wizard didn't add any amenities. Darn.
+A damp, dark cell with long metal bars leading to the outside. The only way out is to the north. Looks like the wizard didn't add any amenities. Darn. You can see a key on the ground in front of your cell.
 #
 JAIL_CELL_B
 A damp cell that now has light from the hallway flowing through it. Said hallway is to the north.
 #
 DUNGEON_HALL
-A long hallway littered with wall lamps leading to a set of stairs going up. Your old cell is to the south.
+A long hallway littered with wall lamps leading to a set of stairs going up. Your old cell is to the south. A cage is at the end of the hallway to the east.
 #
 BASEMENT_A
-A dusty room with a variety of junk strewn about. On a crate, there is an Old Tome. There is a set of stairs going up, a trap door going down, and a locked door to the west.
+A dusty room with a variety of junk strewn about. On a crate, there is an OldTome. There is a set of stairs going up, a trap door going down, and a door to the west.
 #
 BASEMENT_B
-A dusty room with a variety of junk strewn about. There is a set of stairs going up, a trap door going down, and a locked door to the west.
-#
-BASEMENT_C
-A dusty room with a variety of junk strewn about. There is a set of stairs going up, a trap door going down, and a now opened door to the west.
+A dusty room with a variety of junk strewn about. There is a set of stairs going up, a trap door going down, and a door to the west.
 #
 WINE_CELLAR_A
 You are in a room stock full of various beverages. It'll be tempting not to drink them all. An empty bottle lies on the floor. You can exit back out to the east.
 #
 WINE_CELLAR_B
-You are in a room stock full of various beverages. It'll be tempting not to drink them all. An empty bottle lies on the floor.
+You are in a room stock full of various beverages. It'll be tempting not to drink them all. You can exit back out east.
 #
 CAULDRON_ROOM_A
-You enter a room with a large cauldron in the center. It contains a useless liquid. Maybe you can do something to it? There are stairs going down and another room to the north.
+You enter a room with a large cauldron in the center. It contains a useless liquid. Maybe you can do something to it? There are stairs going down and rooms to the north and east.
 #
 CAULDRON_ROOM_B
-You enter a room with a large cauldron in the center. Your potion bubbles profusely inside of the pot.There are stairs going down and another room to the north.
+You enter a room with a large cauldron in the center. Your potion bubbles profusely inside of the pot.There are stairs going down and rooms to the north and east.
+#
+CAULDRON_ROOM_C
+You enter a room with a large cauldron in the center. Your potion bubbles profusely inside of the pot.There are stairs going down and rooms to the north and east. Your potion is on the table.
+#
+LIBRARY_A
+A large room filled floor to ceiling with books. Bound to be something of importance here. There is a notebook sitting on a table. The cauldron room is to the west. There are stairs going up.
+#
+LIBRARY_B
+A large room filled floor to ceiling with books. Bound to be something of importance here. There is a notebook sitting on a table. The cauldron room is to the west. There are stairs going up.
 #
 ENTRANCE_A
-You've gotten to the entrance at last!!!!!! The door is locked though. Sorry. A candleabra sits on a counter. There is another room to the south.
+You've gotten to the entrance at last!!!!!!  A candleabra sits on a counter. There is another room to the south.
 #
 ENTRANCE_B
-You've gotten to the entrance at last!!!!!! The door is locked though. Sorry. There is another room to the south.
+You've gotten to the entrance at last!!!!!! A goldCoin sits on a counter. There is another room to the south.
 #
 ENTRANCE_C
-You've gotten to the entrance at last!!!!!! And the door is actually unlocked this time!!! The exit is to the north. A candleabra sits on a counter. There is another room to the south.
+You've gotten to the entrance at last!!!!!! There is another room to the south.
 #
-ENTRANCE_D
-You've gotten to the entrance at last!!!!!! And the door is actually unlocked this time!!! The exit is to the north. There is another room to the south.
+BUNCELL
+You approach a cage with a fluffy bunny sitting inside it. Looks like the wizard locks up anyone. The dungeon hall is to the west.
+#
+HALLWAY_A
+A long hallway filled with pictures. There is a painting, a drawing, and a window. The library is downstairs. The wizard's room is to the north...
+#
+HALLWAY_B
+A long hallway filled with pictures. There is a painting, a blueberry, a drawing, and a window. The library is downstairs. The wizard's room is to the north...
+#
+BEDROOM_A
+A dark and dreary room that matches the vibes of the wizard. On his table sits a largekey and a jewelryBox. The hallway is to the south.
+#
+BEDROOM_B
+A dark and dreary room that matches the vibes of the wizard. On his table sits a jewelryBox. Inside the jewelryBox is a ruby. The hallway is to the south.
+#
+EXIT
+You've made it!!!! You escaped from the evil wizard!!! Woohoo! Yippee! Hurrah!
 #

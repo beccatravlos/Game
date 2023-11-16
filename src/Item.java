@@ -29,6 +29,16 @@ public class Item implements Serializable{
 		System.out.println(des);
 	}
 
+	public void take() {
+		if(heavy) {
+			System.out.println("It's too heavy!");
+		}
+		else {
+			Game.inventory.add(Game.getCurrentRoom().removeItem(name));
+			System.out.println("You pick up the "+name);
+		}
+	}
+	
 	public void setDes(String des) {
 		this.des = des;
 	}

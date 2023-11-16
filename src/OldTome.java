@@ -1,7 +1,12 @@
 
 public class OldTome extends Item{
 	public OldTome() {
-		super("OldTome","A tattered, old book probably older than anyone you've ever met.");
+		super("OldTome","A tattered, wrinkly book probably older than anyone you've ever met.");
+	}
+	
+	public void take() {
+		super.take();
+		Game.getCurrentRoom().setId("BASEMENT_B");
 	}
 	
 	public void use() {
@@ -9,9 +14,14 @@ public class OldTome extends Item{
 			if(isUsed())
 				Game.print("You've cast your spell. Find a bottle.");
 			else {
-				Game.print("You speak in tongues over the cauldron. It furiously bubbles, shakes, and changes color.");
-				Game.print("You've made a potion!");
-				setUsed(true);
+				if(Game.flags.contains("ruby") && Game.flags.contains("goldCoin") && Game.flags.contains("blueberry")) {
+					Game.print("You speak in tongues over the cauldron. It furiously bubbles, shakes, and changes color.");
+					Game.print("You've made a potion!");
+					Game.getCurrentRoom().setId("CAULDRON_ROOM_B");
+					setUsed(true);
+				} else {
+					Game.print("Nothing happens");
+				}
 			}
 		} else
 			System.out.println("You can't do that.");

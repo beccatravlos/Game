@@ -11,6 +11,7 @@ public class Key extends Item{
 				System.out.println("You've already broken out of the cell!");
 			else {
 				System.out.println("You're free!");
+				Game.getCurrentRoom().setId("JAIL_CELL_B");
 				Room dun = Game.getCurrentRoom().getExit("n");
 				dun.setLocked(false);
 			}
