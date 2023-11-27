@@ -8,4 +8,8 @@ public class Potion extends Item{
 		super.take();
 		Game.getCurrentRoom().setId("CAULDRON_ROOM_B");
 	}
+	
+	public void use() {
+		Game.print("This is for the bunny, not you!!!");
+	}
 }

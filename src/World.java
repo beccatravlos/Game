@@ -31,9 +31,12 @@ public class World {
 		dungeonHall.setLocked(true);
 		//Item chest = new Item("chest","It is a large, heavy chest.");
 		//chest.setHeavy(true);
+		NPC puppy = new Puppy();
+		dungeonHall.addNPC(puppy);
 		
 		bunCell.addExit(dungeonHall, 'w');
-		
+		NPC bunny = new Bunny();
+		bunCell.addNPC(bunny);
 		
 		basement.addExit(wineCellar, 'w');
 		basement.addExit(dungeonHall, 'd');
@@ -78,6 +81,7 @@ public class World {
 		Item largekey = new LargeKey();
 		bedroom.addItem(largekey);
 		Item jewelryBox = new JewelryBox();
+		jewelryBox.setHeavy(true);
 		bedroom.addItem(jewelryBox);
 		
 		entrance.addExit(calRoom, 's');

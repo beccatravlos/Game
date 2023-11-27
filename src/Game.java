@@ -16,6 +16,7 @@ public class Game {
 	public static ArrayList<Item> inventory = new ArrayList<Item>();
 	public static HashMap<String,String> rMap = new HashMap<String,String>();
 	public static HashSet<String> flags = new HashSet<String>();
+	public static Scanner scan = new Scanner(System.in);
 	public static Room getCurrentRoom() {
 		return currentRoom;
 	}
@@ -95,12 +96,10 @@ public class Game {
 	
 	public static void main(String[] args) {
 		print("You are a thief who attempted to pickpocket an old man who turned  out to be an evil wizard. He knocked you unconsious and has locked you in his dungeon. Your mission is to escape the evil wizard's house. Best of luck.");
-		Scanner scan = new Scanner(System.in);
 		String playerCommand = "a";
 		String itemName;
 		populateMap("RoomDesc");
 		//printMap();
-		
 		
 		currentRoom = World.buildWorld();
 		String a[];
@@ -109,6 +108,7 @@ public class Game {
 			print("What do you want to do? ");
 			playerCommand = scan.nextLine();
 			a=playerCommand.split(" ");
+			NPC npc;
 			if(playerCommand.equals("i")) {
 				if(inventory.isEmpty()) {
 					print("You don't have anything");
@@ -156,9 +156,12 @@ public class Game {
 				if(!found) {
 					if(currentRoom.hasItem(itemName)) {
 						currentRoom.getItem(itemName).look();
-					}else {
-					print("You can't do that.");
+					}else if(currentRoom.hasNPC(itemName)) {
+						currentRoom.getNPC(itemName).look();
+					}
 				}
+				else {
+					print("You can't do that.");
 				}
 				
 			} else if(a[0].equals("use")) {
@@ -180,14 +183,26 @@ public class Game {
 					System.out.println("You can't do that.");
 				}
 				
-//			}else if(a[0].equals("talk")) {
-//				npc = currentRoom.getNPC(words[1]);
-//				npc.talk();
-			}else if(currentRoom.getName().equals("exit")) {
-				System.exit(0);
-				playerCommand = "x";
+			}else if(a[0].equals("talk")) {
+				npc = currentRoom.getNPC(a[1]);
+				npc.talk();
+			} else if(a[0].equals("give")) {
+				itemName = a[1];
+				Item giveItem = null;
+				for(Item i : inventory) {
+					if(itemName.equals(i.getName())) {
+						giveItem = i; 
+					}
+				}
+				npc = currentRoom.getNPC(a[3]);
+				npc.give(giveItem);
+				
 			}else {
 				System.out.println("Invalid command.");
+			}
+			if(currentRoom.getName().equals("exit")) {
+				System.exit(0);
+//				playerCommand = "x";
 			}
 		} 
 		scan.close();

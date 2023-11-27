@@ -1,7 +1,7 @@
 
 public class LargeKey extends Item{
 	public LargeKey(){
-		super("largekey", "A big key found in the wizard's room. Could this unlock the way out?");
+		super("largekey", "A big key given to you by the esteemed bunny,Valentino Alexander Edward Angelonias III. Your ticket out of here!");
 	}
 	
 	public void use() {

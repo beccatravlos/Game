@@ -2,10 +2,10 @@ JAIL_CELL_A
 A damp, dark cell with long metal bars leading to the outside. The only way out is to the north. Looks like the wizard didn't add any amenities. Darn. You can see a key on the ground in front of your cell.
 #
 JAIL_CELL_B
-A damp cell that now has light from the hallway flowing through it. Said hallway is to the north.
+A damp cell that now has light from the hallway flowing through it. Said hallway is to the north. 
 #
 DUNGEON_HALL
-A long hallway littered with wall lamps leading to a set of stairs going up. Your old cell is to the south. A cage is at the end of the hallway to the east.
+A long hallway littered with wall lamps leading to a set of stairs going up. Your old cell is to the south. A cage is at the end of the hallway to the east. There is a puppy sitting on the ground.
 #
 BASEMENT_A
 A dusty room with a variety of junk strewn about. On a crate, there is an OldTome. There is a set of stairs going up, a trap door going down, and a door to the west.
@@ -53,7 +53,7 @@ HALLWAY_B
 A long hallway filled with pictures. There is a painting, a blueberry, a drawing, and a window. The library is downstairs. The wizard's room is to the north...
 #
 BEDROOM_A
-A dark and dreary room that matches the vibes of the wizard. On his table sits a largekey and a jewelryBox. The hallway is to the south.
+A dark and dreary room that matches the vibes of the wizard. On his table sits a jewelryBox. The hallway is to the south.
 #
 BEDROOM_B
 A dark and dreary room that matches the vibes of the wizard. On his table sits a jewelryBox. Inside the jewelryBox is a ruby. The hallway is to the south.
