@@ -24,7 +24,7 @@ public class OldTome extends Item{
 				}
 			}
 		} else
-			System.out.println("You can't do that.");
+			Game.print("You can't do that.");
 	}
 }
 

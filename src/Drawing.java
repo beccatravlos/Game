@@ -5,6 +5,6 @@ public class Drawing extends Item{
 	}
 
 	public void use() {
-		System.out.println("You take a closer look, but nothing can help you figure out what it is supposed to be. Maybe don't bring up his drawing skills if you find the wizard again.");
+		Game.print("You take a closer look, but nothing can help you figure out what it is supposed to be. Maybe don't bring up his drawing skills if you find the wizard again.");
 	}
 }

@@ -8,7 +8,7 @@ public class Window extends Item{
 		if(isUsed()) {
 			System.out.print("The window is already open.");
 		} else {
-			System.out.println("You open the window.");
+			Game.print("You open the window.");
 			setUsed(true);
 		}
 	}

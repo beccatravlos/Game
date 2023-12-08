@@ -7,13 +7,13 @@ public class LargeKey extends Item{
 	public void use() {
 		if(Game.getCurrentRoom().getName().equals("entrance")) {
 			if(isUsed())
-				System.out.println("The door is open!");
+				Game.print("The door is open!");
 			else {
-				System.out.println("The key fits!! You can finally leave!");
+				Game.print("The key fits!! You can finally leave!");
 				setUsed(true);
 			}
 		} else
-			System.out.println("The key doesn't fit here.");
+			Game.print("The key doesn't fit here.");
 	}
 	
 }

@@ -25,14 +25,14 @@ public class Puppy extends NPC{
 		}
 	}
 	@Override
-	public void response(int option) {
+	public void response(String option) {
 		if(!Game.flags.contains("pupTalkA")){
 			switch(option) {
-				case 1:
+				case "1":
 					say("I am! I'm a good boy!");
 					Game.flags.add("pupTalkA");
 					break;	
-				case 2:
+				case "2":
 					say("I am to adorable! Why are you so mean?");
 					Game.print("The puppy bites you. You deserve it.");
 					Game.flags.add("pupTalkA");
@@ -40,11 +40,11 @@ public class Puppy extends NPC{
 			}
 		} else if(Game.flags.contains("pupTalkA") && !Game.flags.contains("pupTalkB")){
 			switch(option) {
-			case 1:
+			case "1":
 				say("Yes! I love fetch!");
 				Game.flags.add("pupTalkB");
 				break;	
-			case 2:
+			case "2":
 				say("You're a bad person! I don't like you!");
 				Game.print("(The puppy runs away and doesn't come back.)");
 				Game.flags.add("pupTalkB");

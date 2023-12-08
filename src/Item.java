@@ -26,16 +26,16 @@ public class Item implements Serializable{
 	}
 
 	public void look() {
-		System.out.println(des);
+		Game.print(des);
 	}
 
 	public void take() {
 		if(heavy) {
-			System.out.println("It's too heavy!");
+			Game.print("It's too heavy!");
 		}
 		else {
 			Game.inventory.add(Game.getCurrentRoom().removeItem(name));
-			System.out.println("You pick up the "+name);
+			Game.print("You pick up the "+name);
 		}
 	}
 	
@@ -53,7 +53,7 @@ public class Item implements Serializable{
 	}
 
 	public void use() {
-		System.out.println("You can't use this item...yet.");
+		Game.print("You can't use this item...yet.");
 	}
 
 	public String toString() {

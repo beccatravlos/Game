@@ -14,6 +14,6 @@ public class GoldCoin extends Item{
 			Game.inventory.remove(this);
 			Game.flags.add("goldCoin");
 		} else 
-			System.out.println("You can't do that.");
+			Game.print("You can't do that.");
 		}
 }

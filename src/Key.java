@@ -8,14 +8,14 @@ public class Key extends Item{
 	public void use() {
 		if(Game.getCurrentRoom().getName().equals("cell")) {
 			if(isUsed())
-				System.out.println("You've already broken out of the cell!");
+				Game.print("You've already broken out of the cell!");
 			else {
-				System.out.println("You're free!");
+				Game.print("You're free!");
 				Game.getCurrentRoom().setId("JAIL_CELL_B");
 				Room dun = Game.getCurrentRoom().getExit("n");
 				dun.setLocked(false);
 			}
 		} else
-			System.out.println("That key doesn't fit anywhere here.");
+			Game.print("That key doesn't fit anywhere here.");
 	}
 }
